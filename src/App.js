@@ -1,17 +1,15 @@
-import React from 'react';
-import './App.css';
-import Modal from './Components/Modal';
-import ModalProvider from './Contexts/ModalProvider';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import $ from "jquery";
 
-/**
- * @return {null}
- */
 function App() {
-  return (
-    <ModalProvider>
-      <Modal />
-    </ModalProvider>
-  );
+  const [price, setPrice] = useState("");
+  useEffect(() => {
+    let prc = $("#priceblock_ourprice").text();
+    setPrice(prc);
+  }, []);
+
+  return <div>{price}</div>;
 }
 
 export default App;
