@@ -8,6 +8,7 @@ html {
   position: fixed;
   top: 0px;
   right: 0px;
-  background-color: #131921;
+  background-color: #3f5f8a;
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.15);
   z-index: 1000000;
 }

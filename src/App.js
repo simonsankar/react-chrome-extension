@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   return (
-    <div class="box has-background-black">
+    <div class="px-4 py-3">
       <h2 class="has-text-white">{price}</h2>
     </div>
   );
