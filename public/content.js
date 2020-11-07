@@ -11,7 +11,7 @@ function main() {
         `${extensionOrigin}/static/`
       );
       // eslint-disable-next-line no-undef
-      $(styleStashHTML).appendTo("body");
+      $(styleStashHTML).prependTo("#desktop_unifiedPrice");
     })
     .catch((error) => {
       console.warn(error);
